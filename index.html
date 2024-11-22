@@ -1,0 +1,457 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Frontend Web Developer
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hidden {
+            display: none;
+        }
+        .bg-dark {
+            background-color: #1a202c;
+        }
+        .text-dark {
+            color: #a0aec0;
+        }
+        .hover-bg-dark:hover {
+            background-color: #2d3748;
+        }
+        .hover-text-dark:hover {
+            color: #cbd5e0;
+        }
+        .transition {
+            transition: all 0.5s ease;
+        }
+        .hover-enlarge:hover {
+            transform: scale(1.05);
+        }
+        .bg-ash {
+            background-color: #4a5568;
+        }
+        .transition-slow {
+            transition: background-color 25s ease-in-out 2s;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .hover-blue:hover .name {
+            color: #4299e1;
+            transition: color 2s;
+        }
+        .hover-blue:hover .title {
+            color: #e53e3e;
+            transition: color 2s;
+        }
+        .hover-project:hover .project-title {
+            color: #E2DAD6;
+            transition: color 2s;
+        }
+        .hover-project:hover .project-description {
+            color: #F6EACB;
+            transition: color 2s;
+        }
+        .hover-achievement:hover .achievement-title {
+            color: #E5E1DA;
+            transition: color 2s;
+        }
+        .hover-achievement:hover .achievement-description {
+            color: #B3C8CF;
+            transition: color 2s;
+        }
+        .hover-certification:hover .certification-description {
+            color: #F6EACB;
+            transition: color 2s;
+        }
+  </style>
+ </head>
+ <body class="bg-cover bg-center bg-dark text-dark" style="background-image: url('https://placehold.co/1920x1080/1a202c/2d3748');">
+  <div class="flex flex-col h-screen justify-between p-8">
+   <div class="flex justify-end relative">
+    <button class="bg-gray-800 text-white py-2 px-4 rounded-full transition hover-bg-dark" id="menuButton">
+     menu
+    </button>
+    <div class="hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-10" id="menuDropdown">
+     <a class="block px-4 py-2 text-white hover-bg-dark transition" href="#home">
+      Home
+     </a>
+     <a class="block px-4 py-2 text-white hover-bg-dark transition" href="#projects">
+      Projects
+     </a>
+     <a class="block px-4 py-2 text-white hover-bg-dark transition" href="#achievements">
+      Achievements
+     </a>
+     <a class="block px-4 py-2 text-white hover-bg-dark transition" href="#certifications">
+      Certifications
+     </a>
+     <a class="block px-4 py-2 text-white hover-bg-dark transition" href="#contact">
+      Contact
+     </a>
+    </div>
+   </div>
+   <div class="text-white max-w-2xl fade-in hover-blue" id="home">
+    <h1 class="text-6xl font-bold leading-tight">
+     Hi, I'm
+     <span class="name">
+      Bhanu Prakash
+     </span>
+     <br/>
+     <span class="title">
+      Frontend Web Developer
+     </span>
+    </h1>
+    <p class="mt-4 text-lg">
+        Enthusiastic AWS Cloud and Front-End Developer with strong expertise in HTML, CSS, JavaScript, and
+        Bootstrap.
+    </p>
+    <div class="mt-8 flex space-x-4">
+     <a class="bg-blue-500 text-white py-3 px-6 rounded-lg font-semibold transition hover-bg-dark" href="#contact">
+      Hire me
+     </a>
+     <a class="bg-transparent border border-white text-white py-3 px-6 rounded-lg font-semibold transition hover-bg-dark" href="#projects">
+      See my work
+     </a>
+    </div>
+    <div class="mt-8 flex space-x-4">
+     <a class="bg-blue-500 text-white py-3 px-6 rounded-lg font-semibold transition hover-bg-dark" href="mailto:bhanududikatla@gmail.com">
+      <i class="fas fa-envelope">
+      </i>
+      Email
+     </a>
+     <a class="bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition hover-bg-dark" href="https://www.linkedin.com/in/bhanu-prakash-dudikatla-722b2a219/">
+      <i class="fab fa-linkedin">
+      </i>
+      LinkedIn
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="text-white max-w-2xl mx-auto mt-8" id="projects">
+   <h1 class="text-4xl font-bold leading-tight">
+    Projects
+   </h1>
+   <p class="mt-4 text-lg">
+    Here are few projects that helpmed me in gaining skills.
+   </p>
+   <div class="grid grid-cols-1 gap-4 mt-8">
+    <div class="bg-gray-800 text-white p-8 rounded-lg flex transition hover-bg-dark hover-enlarge bg-ash transition-slow h-screen hover-project">
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold project-title">
+        Volume Control using Hand Gestures.
+       </h2>
+       <p class="mt-2 project-description text-white  hover-blue ">
+       <p> Developed a machine learning model that dynamically controls system volume using hand
+        gestures, resulting in a 96% improvement in user interaction.
+    
+    </p>
+      <i>Tech Stack - Python, OpenCV, Machine Learning. </i>
+    
+       </p>
+    
+      </div>
+     </div>
+     <div class="flex-1 flex items-center justify-center">
+      <img alt="Sample image for project 1" class="rounded-lg" height="200" src="file:///C:/Users/dell/Desktop/projects/portfolio/Bhanu_portfolio.github.io/vc1.jpeg" width="250"/>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-8 rounded-lg flex transition hover-bg-dark hover-enlarge bg-ash transition-slow h-screen hover-project">
+     <div class="flex-1 flex items-center justify-center order-2">
+      <div>
+       <h2 class="text-2xl font-bold project-title">
+        Machine-learning based diagnosis of paralysis Agitans
+       </h2>
+       <p class="mt-2 project-description">
+        <p> Developed a machine learning model that dynamically controls system volume using hand
+        Created a machine learning model with 94% accuracy using XGBoost algorithm for diagnosing
+        paralysis in aged individuals, significantly improving early detection rates.
+        </p>
+        Tech Stack - Python, Machine Learning.
+       </p>
+      </div>
+     </div>
+     <div class="flex-1 flex items-center justify-center order-1">
+      <img alt="Sample image for project 2" class="rounded-lg" height="200" src="C:\Users\dell\Desktop\projects\portfolio\Bhanu_portfolio.github.io\pk1.jpeg" width="250"/>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-8 rounded-lg flex transition hover-bg-dark hover-enlarge bg-ash transition-slow h-screen hover-project">
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold project-title">
+        Personal portfolio webpage
+       </h2>
+       <p class="mt-2 project-description">
+        <p>
+        Developed a dynamic front-end portfolio web-pages, enhancing user interaction and capturing
+        details efficiently.
+        </p>
+        Tech Stack - HTML, CSS, JavaScript
+       </p>
+      </div>
+     </div>
+     <div class="flex-1 flex items-center justify-center">
+      <img alt="Sample image for project 3" class="rounded-lg" height="200" src= "C:\Users\dell\Desktop\projects\portfolio\Bhanu_portfolio.github.io\p1.jpeg" width="250"/>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-8 rounded-lg flex transition hover-bg-dark hover-enlarge bg-ash transition-slow h-screen hover-project">
+     <div class="flex-1 flex items-center justify-center order-2">
+      <div>
+       <h2 class="text-2xl font-bold project-title">
+        Building webpages for a startUP company.
+       </h2>
+       <p class="mt-2 project-description">
+        Collabarated with the team and helped in developing a dynamic website for Stanatha- a startUp company.
+        
+       </p>
+       Tech Stack - HTML, CSS3, JavaScript, Reactjs, Git.
+      </div>
+     </div>
+     <div class="flex-1 flex items-center justify-center order-1">
+      <img alt="Sample image for project 4" class="rounded-lg" height=200" src="C:\Users\dell\Desktop\projects\portfolio\Bhanu_portfolio.github.io\cms .png" width="250"/>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="text-white max-w-2xl mx-auto mt-8" id="achievements">
+   <h1 class="text-4xl font-bold leading-tight">Achievements
+   </h1>
+   <p class="mt-4 text-lg">
+    Here are some of my achievements...
+   </p>
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+    <div class="bg-gray-800 text-white p-8 rounded-lg flex transition hover-bg-dark hover-enlarge hover-achievement">
+     <div class="flex-1 flex items-center justify-center">
+      <img alt="Sample image for achievement 1" class="rounded-lg" height="450" src="C:\Users\dell\Desktop\projects\portfolio\Bhanu_portfolio.github.io\prize.jpg" width="200"/>
+     </div>
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold achievement-title">
+       
+       </h2>
+       <p class="mt-2 achievement-description">
+         Won 2nd prize in national-level paper presentation on “Facial-based attendance System with GeoFencing.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-8 rounded-lg flex transition hover-bg-dark hover-enlarge hover-achievement">
+     <div class="flex-1 flex items-center justify-center">
+      <img alt="Sample image for achievement 2" class="rounded-lg" height="450" src="C:\Users\dell\Desktop\projects\portfolio\Bhanu_portfolio.github.io\sih.jpeg" width="200"/>
+     </div>
+     <div class="flex-1 flex items-center justify">
+      <div>
+       <h2 class="text-2xl font-bold achievement-title">
+        
+       </h2>
+       <p class="mt-2 achievement-description">
+        Participated in Smart India Hackathon (SIH) – 2023, got selected at the college level.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-8 rounded-lg flex transition hover-bg-dark hover-enlarge hover-achievement">
+     <div class="flex-1 flex items-center justify-center">
+      <img alt="Sample image for achievement 3" class="rounded-lg" height="450" src="C:\Users\dell\Desktop\projects\portfolio\Bhanu_portfolio.github.io\jtsit.png" width="200"/>
+     </div>
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold achievement-title">
+       </h2>
+       <p class="mt-2 achievement-description">
+        Published a research paper on<a href="https://jtseit.com/volume-12-issue-5-2024/" >“Volume control using hand gestures”</a> at JTSEIT volume 12 – issue
+        5.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-8 rounded-lg flex transition hover-bg-dark hover-enlarge hover-achievement">
+     <div class="flex-1 flex items-center justify-center">
+      <img alt="Sample image for achievement 4" class="rounded-lg" height="450" src="C:\Users\dell\Desktop\projects\portfolio\Bhanu_portfolio.github.io\google.png" width="200"/>
+     </div>
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold achievement-title">
+       </h2>
+       <p class="mt-2 achievement-description">
+        Earned 10 badges as a member of the <a href="https://developers.google.com/profile/u/116615164701913102297 " > Google for developers community</a>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-8 rounded-lg transition hover-bg-dark hover-enlarge hover-achievement">
+     <div class="flex-1 flex items-center justify-center">
+      <img alt="Sample image for achievement 5" class="rounded-lg" height="450" src="C:\Users\dell\Desktop\projects\portfolio\Bhanu_portfolio.github.io\micro.jpeg" href="https://developers.google.com/profile/u/116615164701913102297" width="200"/>
+     </div>
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold achievement-title">
+        
+       </h2>
+       <p class="mt-2 achievement-description">
+        Earned 17 badges and a trophy at level 6 in the <a href="https://learn.microsoft.com/en-us/users/bhanuprakashdudikatla-0093/"> MICRSOSOFT learn community. </a>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="text-white max-w-2xl mx-auto mt-8" id="certifications">
+   <h1 class="text-4xl font-bold leading-tight">
+    Certifications
+   </h1>
+   <p class="mt-4 text-lg">
+    Here are some of my certifications...
+   </p>
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+    <div class="bg-gray-800 text-white p-4 rounded-lg transition hover-bg-dark hover-enlarge hover-certification">
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold">
+        Python for data science 
+       </h2>
+       <p class="mt-2 certification-description">
+        
+       </p>
+       <a class="text-blue-500 underline" href="https://www.credly.com/badges/5b3fe2bd-aa5b-42a7-a39e-897a162e7a9b">
+        <b>IBM</b>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-4 rounded-lg transition hover-bg-dark hover-enlarge hover-certification">
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold">
+        Responsive Web Design
+       </h2>
+       <p class="mt-2 certification-description">
+       
+       </p>
+       <a class="text-blue-500 underline" href="https://www.freecodecamp.org/certification/Bhanu-prakash/responsive-web-design">
+       <b>FreeCodeCamp</b> 
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-4 rounded-lg transition hover-bg-dark hover-enlarge hover-certification">
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold">
+        AWS Academy Cloud Foundations 
+       </h2>
+       <p class="mt-2 certification-description">
+     
+       </p>
+       <a class="text-blue-500 underline" href="https://www.credly.com/badges/a3df1e7a-3026-4df7-be73-109a983656ae">
+        <b>AWS</b>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-4 rounded-lg transition hover-bg-dark hover-enlarge hover-certification">
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold">
+        Build Your Own Chatbot - Level 1
+       </h2>
+       <p class="mt-2 certification-description">
+       </p>
+       <a class="text-blue-500 underline" href="https://www.credly.com/badges/8212fcee-d735-4cda-b495-98d800d4d275">
+    <b>IBM</b>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="bg-gray-800 text-white p-4 rounded-lg transition hover-bg-dark hover-enlarge hover-certification">
+     <div class="flex-1 flex items-center justify-center">
+      <div>
+       <h2 class="text-2xl font-bold">
+        AWS Academy Graduate - AWS Academy Cloud Architecting 
+       </h2>
+       <p class="mt-2 certification-description">
+      
+       </p>
+       <a class="text-blue-500 underline" href="#">
+       <b>AWS</b>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="text-white max-w-2xl mx-auto mt-8" id="contact">
+   <h1 class="text-4xl font-bold leading-tight">
+    Contact
+   </h1>
+   <p class="mt-4 text-lg">
+    Get in touch with me...
+   </p>
+   <form class="mt-8">
+    <div class="mb-4">
+     <label class="block text-lg" for="name">
+      Name
+     </label>
+     <input class="w-full p-2 rounded-lg text-black" id="name" placeholder="Your Name" type="text"/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-lg" for="email">
+      Email
+     </label>
+     <input class="w-full p-2 rounded-lg text-black" id="email" placeholder="Your Email" type="email"/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-lg" for="message">
+      Message
+     </label>
+     <textarea class="w-full p-2 rounded-lg text-black" id="message" placeholder="Your Message" rows="4"></textarea>
+    </div>
+    <button class="bg-blue-500 text-white py-3 px-6 rounded-lg font-semibold transition hover-bg-dark" type="submit">
+     Send Message
+    </button>
+   </form>
+   <div class="mt-8 flex space-x-4">
+    <a class="bg-blue-500 text-white py-3 px-6 rounded-lg font-semibold transition hover-bg-dark" href="mailto:bhanududikatla@gmail.com">
+     <i class="fas fa-envelope">
+     </i>
+     Email
+    </a>
+    <a class="bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition hover-bg-dark" href="https://www.linkedin.com/in/bhanu-prakash-dudikatla-722b2a219/">
+     <i class="fab fa-linkedin">
+     </i>
+     LinkedIn
+    </a>
+    <a class="bg-pink-500 text-white py-3 px-6 rounded-lg font-semibold transition hover-bg-dark" href="https://www.instagram.com/click_and_blink_stories?igsh=NnBmYWlzZHRkMThr">
+     <i class="fab fa-instagram">
+     </i>
+     Instagram
+    </a>
+   </div>
+  </div>
+  <script>
+   const menuButton = document.getElementById('menuButton');
+        const menuDropdown = document.getElementById('menuDropdown');
+        menuButton.addEventListener('click', () => {
+            menuDropdown.classList.toggle('hidden');
+        });
+        document.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
+                menuDropdown.classList.add('hidden');
+            }
+        });
+  </script>
+ </body>
+</html>
